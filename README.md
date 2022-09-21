@@ -42,9 +42,9 @@ with a zero in the first position of the first row representing a raised dot, an
 
 Following the same pattern, hello world would be represented as follows:
 
-0.0.0.0.0....00.0.0.00
-00.00.0..0..00.0000..0
-....0.0.0....00.0.0...
+0.0.0.0.0....00.0.0.00 \n
+00.00.0..0..00.0000..0 \n
+....0.0.0....00.0.0... \n
 
 You can experiment with converting other words yourself and share some samples with your classmates. Use the lowercase letters a-z here for your project.
 
