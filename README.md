@@ -47,6 +47,7 @@ Braille uses a two-by-three grid of dots to represent characters. We’ll simula
 0.
 00
 ..
+
 with a zero in the first position of the first row representing a raised dot, and two zeros in the second row representing two raised dots, and periods in the remaining spaces representing unraised spaces.
 
 Following the same pattern, hello world would be represented as follows:

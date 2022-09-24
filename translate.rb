@@ -1,6 +1,6 @@
 require './lib/night_writer'
 
-# night_writer = NightWriter.new
+night_writer = NightWriter.new
 input_file = File.open(ARGV[0], "r")
 input_message = input_file.read
 input_file.close
