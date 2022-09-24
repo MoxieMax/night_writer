@@ -34,8 +34,11 @@ braille.txt is the name that we would like to give to a file that we will create
 In order to break this problem down further, you may wish to work on things in the following order:
 
 Create a Ruby program that prints the sample line of text provided above no matter what arguments are provided from the command line.
+
 Update your existing program so that the name of the file that it prints out changes based on the second input that the user provides from the command line.
+
 Further update your program so that the number of characters it prints out changes based on the number of characters in the file that the user provides as the first argument that the user provides from the command line.
+
 Iteration 2: Writing Braille
 Update your existing program so that you can create a new file containing characters representing Braille.
 
