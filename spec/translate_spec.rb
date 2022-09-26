@@ -11,9 +11,14 @@ RSpec.describe Translator do
   end
   
   it 'has readable attributes' do
-    binding.pry
     expect(@translator.letters).to be_a(Hash)
     expect(@translator.letters.keys[0]).to eq('a')
     expect(@translator.letters.keys[25]).to eq('z')
+  end
+  
+  it 'can prepare a message for conversion' do
+    require 'pry';binding.pry
+    expect(@translator).to eq()
+    
   end
 end

@@ -31,22 +31,32 @@ class Translator
                 ' ' => ["..", "..", ".."]
               }
   end
-  def convert_for_translation(message)
-    message.downcase.chars.gsub(/[^a-z0-9\s]/i, '')
-  end
+  # def convert_for_translation
+
+  # end
     
 end
-# translator = Translator.new
 # require 'pry'; binding.pry
-# print a, b, c, d, e, f, g, h, i, j
-# print k, l, m, n, o, p, q, r, s, t
-# print u, v, w, x, y, z
-# print h, e, l, l, o
-# print w, o, r, l, d
+translator = Translator.new
+input_file = File.open(ARGV[0], "r")
+message = input_file.read
+input_file.close
+prepare_message = message.downcase.gsub!(/[^a-z\s]/, '').chars
+top_row = []
+middle_row = []
+bottom_row = []
+  prepare_message.each do |letter|
+      top_row << translator.letters[letter].first
+      middle_row << translator.letters[letter][1]
+      bottom_row << translator.letters[letter].last
+  end
+convert_message = top_row.join(" ") + "\n" + middle_row.join(" ") + "\n" + bottom_row.join(" ") + "\n"
+output_file = File.open(ARGV[1], "w")
+output_file.write(convert_message)
+output_file.close
+p "Created #{ARGV[1]} containing #{convert_message.length} characters"
 
-# :a, :b, :c, :d, :e, :f, :g, :h, :i, :j, 
-#             :k, :l, :m, :n, :o, :p, :q, :r, :s, :t, 
-#             :u, :v, :w, :x, :y, :z
+#prints punctuation as space at the end
 
 # 0. 0. 0. 0. 0. .. .0 0. 0. 0. 00
 # 00 .0 0. 0. .0 .. 00 .0 00 0. .0
