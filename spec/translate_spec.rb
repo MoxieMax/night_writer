@@ -16,9 +16,9 @@ RSpec.describe Translator do
     expect(@translator.letters.keys[25]).to eq('z')
   end
   
-  it 'can prepare a message for conversion' do
-    require 'pry';binding.pry
-    expect(@translator).to eq()
-    
-  end
+  # it 'can prepare a message for conversion' do
+  #   require 'pry';binding.pry
+  #   expect(@translator).to eq()
+  # 
+  # end
 end
