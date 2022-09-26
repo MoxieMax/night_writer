@@ -52,9 +52,11 @@ with a zero in the first position of the first row representing a raised dot, an
 
 Following the same pattern, hello world would be represented as follows:
 
+```
 0.0.0.0.0....00.0.0.00 \n
 00.00.0..0..00.0000..0 \n
 ....0.0.0....00.0.0... \n
+```
 
 You can experiment with converting other words yourself and share some samples with your classmates. Use the lowercase letters a-z here for your project.
 
@@ -67,11 +69,14 @@ Create a dictionary of some sort that allows you to look up a English letter and
 Update your program to take an input file with a single letter and create an output file with the Braille equivalent.
 Update your program again so that it can take multiple letters. Compare results with a classmate.
 Update the program so that messages of more than 80 characters are split over multiple lines.
-Iteration 3: Writing English Letters
-Create a NightReader program that will convert Braille back to English text:
 
+Iteration 3: Writing English Letters
+
+Create a NightReader program that will convert Braille back to English text:
+```
 $ ruby ./lib/night_reader.rb braille.txt original_message.txt
 Created 'original_message.txt' containing 256 characters.
+```
 In order to break this problem down further, you may wish to work on things in the following order:
 
 Using your existing Ruby program as a template, create a new program called NightReader that prints a confirmation message to the terminal that contains the name of the file that the user input as their second argument.
