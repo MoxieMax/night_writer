@@ -7,12 +7,13 @@ class NightWriter
   def initialize
     @file_reader = FileReader.new.read
   end
-  p "Read file #{ARGV[0]} containing #{ARGV[0].length } characters"
+  p "Read file #{ARGV[0]} containing #{ARGV[0].length} characters"
+  
 end
 
 #   # def return_text
 #   # 
-#   #   p "Created #{ARGV[1]} containing #{convert_message.length} characters"
+#   #   p "Created #{ARGV[0]} containing #{ARGV[0].length} characters"
 #   # end
 # end
 
