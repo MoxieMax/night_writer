@@ -12,8 +12,9 @@ RSpec.describe Translator do
     # binding.pry
     expect(translator.braille_alphabet).to be_a(BrailleAlphabet)
   end
-  # 
-  # it 'does a thing' do
-  #   expect(translator.METHOD).to eq/be_a(ANSWER)
+  
+  # it 'can prepare a message for conversion' do
+  #   translator.prep_message
+  #   binding.pry
   # end
 end
