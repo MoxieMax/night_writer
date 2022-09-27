@@ -6,6 +6,7 @@ RSpec.describe NightWriter do
   
   it 'exists' do
     expect(night_writer).to be_a(NightWriter)
+    binding.pry
   end
 
   # xit 'can read a file' do
