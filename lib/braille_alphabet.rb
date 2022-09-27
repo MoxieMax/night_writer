@@ -36,10 +36,13 @@ class BrailleAlphabet
     @alphabet[character]
   end
 end
+
+#RUN ME!! ruby lib/braille_alphabet.rb message.txt braille.txt
 # 
 # braille_alphabet = BrailleAlphabet.new
 # input_file = File.open(ARGV[0], 'r')
 # message = input_file.read
+# # require 'pry'; binding.pry
 # input_file.close
 # prepare_message = message.downcase.gsub(/[^\w\s]/, '').chars
 # 
@@ -58,7 +61,7 @@ end
 # output_file.close
 # p "Created #{ARGV[1]} containing #{convert_message.length} characters"
 # 
-# # require 'pry'; binding.pry
+# 
 # # gsub(/[^\w\s]/, '')
 # # gsub!(/[^a-z\s]/, '') => Wouldn't work without punctuation
 # # require 'pry'; binding.pry
