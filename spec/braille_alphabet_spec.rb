@@ -17,10 +17,4 @@ RSpec.describe BrailleAlphabet do
   it 'can translate an English letter to Braille' do
     expect(braille_alphabet.english_to_braille('a')).to eq(["0.", "..", ".."])
   end
-  
-  # it 'can prepare a message for conversion' do
-  #   require 'pry';binding.pry
-  #   expect(@translator).to eq()
-  # 
-  # end
 end
