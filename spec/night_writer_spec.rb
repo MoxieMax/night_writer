@@ -6,10 +6,17 @@ RSpec.describe NightWriter do
   
   it 'exists' do
     expect(night_writer).to be_a(NightWriter)
+    binding.pry
+  end
+  
+  xit 'returns the new file name and length' do
+    #mock/stub?
   end
 
   # xit 'can read a file' do
   # 
   # end
+  
+
 
 end
