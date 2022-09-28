@@ -8,13 +8,17 @@ class NightWriter
   def initialize
     @file_reader = FileReader.new.read
   end
-  p "Read file #{ARGV[0]} containing #{ARGV[0].length} characters"
   
+  # def completion_confirmation
+  #   puts "Created file #{ARGV[0]} containing #{ARGV[0].length} characters"
+  # end
+  # 
+  # def start
+  #   #other methods
+  #   self.completion_confirmation
+  # end
+    
 end
 
-#   # def return_text
-#   # 
-#   #   p "Created #{ARGV[0]} containing #{ARGV[0].length} characters"
-#   # end
-# end
-
+# night_writer = NightWriter.new
+# night_writer.start
